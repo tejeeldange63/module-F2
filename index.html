@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module Test F2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Images with Flex Box -->
+    <div class="flex-container">
+        <div>
+            <button id="img-1" onclick="openFormFunction()"><img class="img" src="https://www.pngitem.com/pimgs/m/157-1579376_transparent-windows-7-start-button-icon-png-start.png" alt="img1"></button>
+        </div>
+
+        <div>
+            <button id="img-2" onclick="displayFormInfoFunction()"><img class="img" src="https://st2.depositphotos.com//1853861/7028/v/450/depositphotos_70280891-stock-illustration-click-here-button.jpg"
+                    alt="img2"></button>
+        </div>
+
+        <div>
+            <button id="img-3" onclick="displayDiceWthScore()"><img class="img" src="https://wallpapercave.com/wp/Q0Q6iK8.jpg" alt="img3"></button>
+        </div>
+
+        <div>
+            <button id="img-4" onclick="generateCouponCodeFunction()"><img class="img" src="https://cdn3.vectorstock.com/i/1000x1000/01/02/discount-coupon-icon-vector-14900102.jpg"
+                    alt="img4"></button>
+        </div>
+    </div>
+
+    <!-- Form Group -->
+    <div class="form-Group hidden" id="form">
+        <label for="name">Name: </label>
+        <input type="text" id="name" required>
+
+        <label for="userName">User Name: </label>
+        <input type="text" id="userName" required>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" required><br><br>
+
+        <button id="sumbitBtn" type="submit" onclick="submitFormInfoFunction()">Submit</button>
+    </div>
+
+    <!-- Display Form info -->
+    <div class="displayformInfo hidden" id="displayInfo">
+        <h2>Your information is</h2><br>
+        <span id="info"></span><br><br>
+        <p>Click on next Image to proceed further</p>
+    </div>
+
+    <!-- dice image with score and attempts -->
+    <div class="diceWthScore hidden" id="diceWthScore">
+        <p>Attempts left : <span id="attemptsLeft">0</span></p><br>
+        <div>
+            <button id="dice-Image" onclick="diceClick()"><img class="img" src="https://cdn.dribbble.com/users/241740/screenshots/3956081/icon_dices_anim.gif"
+                    alt="diceImage"></button><br><br>
+            <p>Remaining Dice Clicks: <span id="diceClicks">3</span></p>
+            <p>Your total score is: <span id="score">0</span></p>
+        </div>
+    </div>
+
+    <!-- Congratulations and try again Image -->
+    <div>
+        <img class="hidden" id="congratsImage" src="https://gifimage.net/wp-content/uploads/2017/01/Congratulations-GIF-Image-for-Whatsapp-and-Facebook-25-1.gif" alt="congratsImage">
+    </div>
+    <div>
+        <img class="hidden" id="tryAgainImage" src="https://media.giphy.com/media/3oEhmP9MUYFBi3IJJm/giphy.gif" alt="tryAgainImage">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

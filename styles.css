@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hidden class */
+  .hidden {
+    display: none;
+  }
+  
+  /* image styling */
+  .img {
+    width: 300px;
+    height: 200px;
+    margin: 1rem;
+    cursor: pointer;
+    
+  }
+  
+  .img:hover{
+    transform: scale(1.2);
+  }
+  
+  .flex-container {
+    /* display: flex; */
+    display: flex ;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  
+  /* Form & i/p elements */
+  .form-Group {
+    margin: 1.9rem;
+    font-size: 1.2rem;
+    padding: 20px;
+    border: 2px solid rgba(15, 0, 0, 0.726);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #sumbitBtn {
+    padding: 0.5rem;
+    font-size: 1rem;
+  
+    padding: 10px 20px;
+    background-color: #8c4caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+  /* Display */
+  #displayInfo {
+    margin: 2rem;
+  }
+  
+  #info {
+    font-size: 2rem;
+  }
+  
+  /* dice img container*/
+  #diceWthScore {
+    margin: 1.5rem;
+  }
+  
+  #congratsImage{
+    
+    width: 25%;
+    height: 20%;
+    border-radius: 25%;
+    margin-top: 5%;
+    margin-left: 35%;
+  }
+  
+  #tryAgainImage{
+    border-radius: 25%;
+    margin-top: 5%;
+    margin-left: 30%;
+  }
+  
